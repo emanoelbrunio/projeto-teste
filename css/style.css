@@ -1,0 +1,765 @@
+html {
+    scroll-behavior: smooth;
+    transition: 1s all;
+}
+
+* {
+    font-size: 18px;
+    transition: 0.3s all;
+}
+
+/* --------- cores --------- */
+:root{
+    --azul-claro: #6DDAD3;  
+    --azul-escuro: #132235; 
+    --branco: #ffffff;
+    --cinza: #d8dadd;
+    --preto: #000000;
+    --azul-claro-neon: #5aebe1;
+    --branco-50: #ffffff50
+}
+
+
+/* --------- header --------- */
+.header {
+    background: var(--azul-escuro);
+    padding: 30px 130px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.header_logo {
+    display: flex;
+}
+
+.header nav ul {
+    display: flex;
+    gap: 30px;
+    color: var(--branco);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.header nav ul li:not(:first-child){
+    color: var(--branco-50);
+}
+
+.header nav ul li:not(:first-child):hover{
+    color: var(--cinza);
+    transform: scale(1.1);
+}
+
+.traco_inicio {
+    display: flex;
+    width: 100%;
+    background: var(--cinza);
+    height: 3px;
+    border-radius: 50px;
+    margin: 3px 0;
+}
+
+.botao_fale {
+    color: var(--azul-escuro);
+    background: var(--azul-claro);
+    padding: 10px 20px;
+    
+    border-radius: 15px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    
+    box-shadow: 1px 1px 5px 1px rgba(109, 218, 211, 0.2);
+    
+}
+
+
+
+
+
+/* ------- main --------- */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+
+/* ------- section - inicio --------- */
+.inicio {
+    display: flex;
+    flex-direction: row;
+    padding: 100px 130px;
+    width: 100%;
+
+    justify-content: space-between;
+}
+
+.ini_logo_txt {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background: var(--azul-escuro);
+    border-radius: 15px;
+
+    width: 48%;
+    height: 100%;
+
+    padding: 50px;
+    align-items: center;
+    
+}
+
+.ini_logo_txt img {
+    width: 100%;
+}
+
+.ini_logo_txt h3 {
+    color: var(--cinza);
+    width: 100%;
+
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.ini_logo_txt hr {
+    border-color: var(--cinza);
+    width: 100%;
+}
+
+.ini_botao {
+    display: flex;
+    color: var(--azul-escuro);
+    background: var(--azul-claro);
+    
+    border-radius: 15px;
+    
+    width: 100%;
+    padding: 15px 0;
+
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    
+    box-shadow: 1px 1px 5px 1px rgba(109, 218, 211, 0.2);
+}
+
+.ini_botao:hover {
+    background: var(--azul-claro-neon);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.ini-img {
+    display: flex;
+    width: 45%;
+}
+
+
+/* ------- section - quem somos --------- */
+
+.qsomos {
+    display: flex;
+    flex-direction:column;
+    background: var(--azul-escuro);
+    width: 100%;
+    align-items: center;    
+    padding: 150px 130px;
+    justify-content: space-between;
+    border-top: 5px dashed var(--branco);
+   
+}
+
+.titulos {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 50px;
+    color: var(--branco);
+}
+
+.qsomos_conteudo {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 100%;
+}
+
+.conteudo_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.qsomos_txt {
+    display: flex;
+    width: 100%;
+   
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--cinza);
+}
+
+.conteudo_redes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    justify-content: flex-start;
+}
+.conteudo_redes p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--branco);
+}
+
+.icones {
+    display: flex;
+    gap: 30px;
+}
+
+.icones a:hover {
+    transform: scale(1.2);
+}
+
+.conteudo_redes img {
+    width: 100%;
+}
+
+
+
+.img_qsomos {
+    display: flex;
+    width: 35%;
+}
+
+/* ------- section - apartamentos --------- */
+
+.apartamentos {
+    display: flex;
+    flex-direction:column;
+    background: #132235;
+    width: 100%;
+    align-items: center;    
+    padding: 100px 130px;
+    justify-content: space-between;
+
+    border-top: 5px dashed var(--branco) ;   
+    border-bottom: 5px dashed var(--branco); 
+}
+
+.ap_conteudo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.pre-txt {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--cinza);
+}
+.box_das_img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.box_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+    background: var(--branco);
+    border-radius: 15px;
+    width: 32.5%;
+
+    box-shadow: 1px 2px 5px var(--preto);
+
+}
+
+.box_img:hover {
+    transform: scale(1.08);
+}
+
+.imagens_quartos {
+    display: flex;
+    width: 100%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+
+.textos_img {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    
+    width: 100%;
+}
+
+.titulo_img {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--azul-escuro);
+}
+
+.para_img {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--azul-escuro);
+}
+
+.ap_botao {
+    display: flex;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--azul-claro);
+    background: none;
+    border-radius: 15px;
+    border: 1px solid var(--azul-claro);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.ap_botao:hover {
+    transform: scale(1.08);
+    color: var(--azul-escuro);
+    background: var(--azul-claro-neon);
+    cursor: pointer;
+}
+
+
+
+
+/* ------- section - fale conosco --------- */
+
+.falec {
+    display: flex;
+    flex-direction:column;
+    
+    width: 100%;
+    align-items: center;    
+    padding: 100px 130px;
+    justify-content: space-between;
+}
+
+.t-fc {
+    color: var(--azul-escuro);
+}
+
+.falec_conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.conteudo_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 30px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--azul-escuro);
+
+    width: 45%;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.formulario label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--azul-escuro);
+}
+
+.in_email, .in_msg {
+        
+    box-shadow: 1px 1px 4px rgba(19, 34, 53, 0.5);
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+     
+}
+
+
+.in_email::placeholder, .in_msg::placeholder {
+    color: var(--cinza);
+}
+
+.in_email:focus, .in_msg:focus {
+    outline: 0;
+    border: 0.1px solid var(--azul-escuro);
+    color: var(--azul-escuro);
+}
+
+.botao_enviar {
+    display: flex;
+    background: var(--azul-claro);
+    box-shadow: 1px 1px 2px rgba(19, 34, 53, 0.5);
+    border-radius: 15px;
+    width: 100%;
+    padding: 15px 0;
+    justify-content: center;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: var(--azul-escuro);
+}
+
+.botao_enviar:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    background: var(--azul-claro-neon);
+}
+
+.conteudo_img{
+    width: 40%;
+}
+
+
+/* ------- footer --------- */
+
+.footer {
+    display: flex;
+    flex-direction:column;
+    background: var(--azul-escuro);
+    padding: 50px 130px 10px 130px;
+    
+    border-top: 5px dashed var(--branco);
+    align-items: center;
+}
+
+.footer_conteudo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+}
+
+.img_e_ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 45%;
+}
+
+.img_e_ul ul {
+    display: flex;
+    gap: 30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--cinza);
+}
+
+.img_e_ul ul li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: var(--branco);
+}
+
+.redes_rodape {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--branco);
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.icones_rodape {
+    display: flex;
+    gap: 30px;
+}
+
+.icones_rodape a:hover {
+    transform: scale(1.2);
+}
+
+.traco {
+    background: var(--branco);
+    width: 100%;
+    height: 0.1px;
+    margin: 30px 0;
+}
+
+.dados {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: var(--cinza);
+}
+
+
+
+/* modificando o scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azul-claro)
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--azul-escuro); 
+}
+
+
+
+/* ------------ responsividade -------------- */
+
+@media (max-width: 1024px ){
+
+    .inicio, .qsomos, .apartamentos, .falec {
+        padding: 100px 80px;
+    }
+
+    .header {
+        padding: 25px 80px;
+    }
+
+    .footer {
+        padding: 40px 80px 20px 80px;
+    }
+
+    .img_qsomos {
+        width: 45%;
+    }
+    .conteudo_img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 850px) {
+    
+    
+    .header {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        justify-content: flex-end;
+        
+    }
+
+    .header nav {      
+        width: 100%;
+    }
+
+    .header nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .botao_fale {
+        background: none;
+        color: var(--branco-50);
+        box-shadow: none;
+        font-weight: normal;
+        padding: 0;
+    }
+
+    .botao_fale:hover {
+        color: var(--cinza);
+    }
+
+    .inicio, .qsomos_conteudo {
+        flex-direction: column;
+    }
+
+    .inicio {
+        gap: 50px;
+    }
+
+    .ini_logo_txt, .ini-img, .qsomos_txt, .conteudo_txt{
+        width: 100%;
+    }
+    
+    .qsomos_conteudo {
+        gap: 50px;
+        align-items: center;
+    }
+
+    .img_qsomos {
+        width: 80%;
+    }
+    .box_das_img {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .box_img{
+        width: 100%;
+    }
+
+    .falec_conteudo {
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .conteudo_form, .conteudo_img {
+        width: 100%;
+    }
+
+    .footer_conteudo, .img_e_ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .footer_conteudo {
+        gap: 30px;
+    }
+    .redes_rodape {
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 630px ){
+
+    .inicio, .qsomos, .apartamentos, .falec {
+        padding: 100px 50px;
+    }
+
+    .header {
+        padding: 25px 50px;
+    }
+
+    .footer {
+        padding: 30px 50px 20px 50px;
+    }
+
+}
+
+@media (max-width: 500px ){
+
+    .inicio, .qsomos, .apartamentos, .falec {
+        padding: 80px 30px;
+    }
+
+    .header {
+        padding: 20px 30px;
+    }
+
+    .footer {
+        padding: 25px 30px 20px 30px;
+    }
+
+}
+
+
+@media (max-width: 400px ){
+
+    .inicio, .qsomos, .apartamentos, .falec {
+        padding: 60px 15px;
+    }
+
+    .header {
+        padding: 20px 15px;
+    }
+
+    .footer {
+        padding: 20px 15px 20px 15px;
+    }
+
+}

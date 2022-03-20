@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="shortcut icon" href="imagens/imagem-logo.svg">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>F4LIFE</title>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="#inicio"><img src="imagens/imagem-logo.svg" alt="Imagem da logo F4Life" class="header_logo"></a>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="#inicio">Inicio</a>
+                    <div class="traco_inicio"></div>
+                </li>
+                
+                <li>
+                    <a href="#qsomos">Quem somos?</a>
+                    <div class="traco_qsomos"></div>
+                </li>
+                
+                <li>
+                    <a href="#ap">Apartamentos</a>
+                    <div class="traco_apart"></div>
+                </li>
+                
+                <li>
+                    <a href="#falec" class="botao_fale">Fale conosco</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="main">
+
+        <section class="inicio" id="inicio">
+
+            <div class="ini_logo_txt">
+
+                <img src="imagens/logo-f4-inicio.svg" alt="logo do F4Life">
+
+                <h3>Aqui o universitério tem qualidade de vida!</h3>
+
+                <hr>
+
+                <a href="#falec" class="ini_botao">Fale conosco</a>
+            </div>
+
+
+            <img src="imagens/casa.svg" alt="Imagem de uma casa" class="ini-img">
+
+        </section>
+
+
+        <section class="qsomos" id="qsomos">
+            <h2 class="titulos">Quem somos?</h2>
+
+            <div class="qsomos_conteudo">
+                <div class="conteudo_txt">
+                    <p class="qsomos_txt">
+                        F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias. 
+                        Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico  e otimizado para a vida de graduação.
+                    </p>
+
+                    <div class="conteudo_redes">
+                        <p>Nossas redes sociais: </p>
+                        <div class="icones">
+
+                            <a href="https://www.facebook.com/" target="_blank"><img src="imagens/icone-fb.svg" alt="Icone do Facebook"></a>
+
+                            <a href="https://www.instagram.com/" target="_blank"><img src="imagens/icone-ig.svg" alt="Icone do Instagram"></a>
+
+                            <a href="https://twitter.com/home" target="_blank"><img src="imagens/icone-tt.svg" alt="Icone do Twitter"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="imagens/imagen-qsomos.svg" alt="Imagem de quem somos" class="img_qsomos">
+            </div>
+        </section>
+
+
+        <section class="apartamentos" id="ap">
+            <h2 class="titulos">Modelos de apartamentos</h2>
+
+            <div class="ap_conteudo">
+                <p class="pre-txt">
+                    Nossos modelos de apartamentos:
+                </p>
+
+                <div class="box_das_img">
+
+                    <div class="box_img">
+                        <img src="imagens/imagem-q1.svg" alt="Imagem do quarto 1" class="imagens_quartos">
+
+                                                    
+                        <div class="textos_img">
+                            <h3 class="titulo_img">
+                                Para um estudante:
+                            </h3>
+                            
+                            <p class="para_img">
+                                Cozinha + 1 quarto + Sala de estar + banheiro + biblioteca.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box_img">
+                        <img src="imagens/imagem-q2.svg" alt="Imagem do quarto 2" class="imagens_quartos">
+
+                                                    
+                        <div class="textos_img">
+                            <h3 class="titulo_img">
+                                Para dois estudantes:
+                            </h3>
+                            
+                            <p class="para_img">
+                                Cozinha + 2 quartos + Sala de estar + banheiro + biblioteca.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="box_img">
+                        <img src="imagens/imagem-q3.svg" alt="Imagem do quarto 3" class="imagens_quartos">
+
+                                                    
+                        <div class="textos_img">
+                            <h3 class="titulo_img">
+                                Para três estudantes:
+                            </h3>
+                            
+                            <p class="para_img">
+                                Cozinha + 3 quartos + Sala de estar + banheiro + biblioteca.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#falec" class="ap_botao">Fale conosco</a>
+            </div>
+
+        </section>
+
+
+        <section class="falec" id="falec">
+            <h2 class="titulos t-fc">
+                fale conosco
+            </h2>
+
+            <div class="falec_conteudo">
+
+                <div class="conteudo_form">
+                    <p>Insira suas informações para entrar em contato conosco.</p>
+
+                    <form action="" class="formulario">
+                    
+                        <label for="email">Email: * </label>
+                        <input type="email" id="email" class="in_email" required placeholder="Ex: meuemail@dominio.com">
+                        
+                        <label for="mensagem">Mensagem: *</label>
+
+                        <textarea name="" id="mensagem" cols="30" rows="5" class="in_msg" required placeholder="Ex: minha mensagem que será enviada."></textarea>
+
+                        <input type="submit" value="Enviar mensagem" class="botao_enviar">
+                    </form>
+                </div>
+
+                <img src="imagens/imagem-fc.svg" alt="Imagem do fale conosco" class="conteudo_img">
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer_conteudo">
+
+            <div class="img_e_ul">
+
+                <a href="#inicio"><img src="imagens/img-rodape.svg" alt="Logo da L4life no rodapé"></a>
+
+                <ul>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#qsomos">Quem somos?</a>
+                    </li>
+                    <li>
+                        <a href="#ap">Apartamentos</a>
+                    </li>
+                    <li>
+                        <a href="#falec">Fale conosco</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="redes_rodape">
+
+                <p>Nossas redes sociais: </p>
+
+                <div class="icones_rodape">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="imagens/icone-fb.svg" alt="Icone do Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="imagens/icone-ig.svg" alt="Icone do Instagram"></a>
+                    <a href="https://twitter.com/home" target="_blank"><img src="imagens/icone-tt.svg" alt="Icone do Twitter"></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="traco"></div>
+
+        <p class="dados">F4 Life. Todos os direitos reservados - (CNPJ: xxxxxxxxxx) Nome da rua, N°, Cidade-UF. Telefone: (XX) X.XXXX-XXXX </p>
+    </footer>
+    
+</body>
+</html>
