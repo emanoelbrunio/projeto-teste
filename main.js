@@ -54,7 +54,7 @@ function validacao (){
         
         document.getElementById("id_botao_ok").classList.add("botao_ok");
 
-        document.getElementById("mensagem").value = '';
+        // document.getElementById("mensagem").value = '';
     } else {  
         document.getElementById("feedback").classList.add("visi");
         const feedback = "Erro no envio: Endereço de email inválido"; 
