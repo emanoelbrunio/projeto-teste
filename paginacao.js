@@ -75,19 +75,19 @@ window.addEventListener("scroll", function(){
     
 });
 
-window.addEventListener("load", function(){
-    const largura = this.window.screen.width;
+// window.addEventListener("load", function(){
+//     const largura = this.window.screen.width;
     
-    if (largura <= 850) {
-        this.window.addEventListener("scroll", function(){
+//     if (largura <= 850) {
+//         this.window.addEventListener("scroll", function(){
 
-            if (this.window.scrollY > 100){  
-                this.document.querySelector(".header_logo").classList.add("invi"); 
-            }
-            else {
-                this.document.querySelector(".header_logo").classList.remove("invi")
-            }
-        });
-    }
+//             if (this.window.scrollY > 100){  
+//                 this.document.querySelector(".header_logo").classList.add("invi"); 
+//             }
+//             else {
+//                 this.document.querySelector(".header_logo").classList.remove("invi")
+//             }
+//         });
+//     }
     
-});
+// });
