@@ -42,34 +42,34 @@ html {
 .header nav ul {
     display: flex;
     gap: 30px;
-    color: var(--branco);
+    color: var(--branco-50);
 
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    align-items: center;
 }
 
-.header nav ul li:not(:first-child){
-    color: var(--branco-50);
+#a_ini {
+    color: var(--branco);
 }
 
-.header nav ul li:not(:first-child):hover{
-    color: var(--cinza);
-    transform: scale(1.1);
-}
 
-.traco_inicio {
+ /* .traco_inicio {
     display: flex;
     width: 100%;
     background: var(--cinza);
     height: 3px;
     border-radius: 50px;
     margin: 3px 0;
-}
+}  */
 
 .botao_fale {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--azul-escuro);
     background: var(--azul-claro);
     padding: 10px 20px;
@@ -86,8 +86,10 @@ html {
     
 }
 
-
-
+.botao_fale:hover {
+    background: var(--azul-claro-neon);
+    transform: scale(1.05);
+}
 
 
 /* ------- main --------- */
@@ -639,6 +641,37 @@ html {
 }
 
 
+/* --------- cor do header ---------- */
+
+.novo_fundo {
+    padding: 15px 130px;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* --------- paginação ---------- */
+.a_forte{
+    color: var(--branco);
+}
+
+.a_hover:hover {
+    display: flex;
+    color: var(--cinza);
+    transform: scale(1.05);
+    
+}
+
+.traco_visi {
+    
+    display: flex;
+    width: 100%;
+    background: var(--branco);
+    height: 3px;
+    border-radius: 50px;
+    margin: 3px 0;
+    
+}
 
 
 /* modificando o scrollbar */
@@ -695,7 +728,10 @@ html {
         flex-direction: column;
         width: 100%;
         justify-content: flex-end;
-        
+    }
+
+    .invi {
+        display: none;
     }
 
     .header nav {      
