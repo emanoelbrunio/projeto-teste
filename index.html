@@ -170,14 +170,21 @@
                     <form action="" class="formulario">
                     
                         <label for="email">Email: * </label>
-                        <input type="email" id="email" class="in_email" required placeholder="Ex: meuemail@dominio.com">
+                        <input type="email" id="email" class="in_email" placeholder="Ex: meuemail@dominio.com">
                         
                         <label for="mensagem">Mensagem: *</label>
 
-                        <textarea name="" id="mensagem" cols="30" rows="5" class="in_msg" required placeholder="Ex: minha mensagem que será enviada."></textarea>
+                        <textarea name="" id="mensagem" cols="30" rows="5" class="in_msg" placeholder="Ex: minha mensagem que será enviada."></textarea>
+
+                        <div class="area">
+                            <p class="invi" id="feedback"> </p>
+                            <button class="invi" id="id_botao_ok">OK</button>
+                        </div>
 
                         <input type="submit" value="Enviar mensagem" class="botao_enviar" id="botao">
                     </form>
+
+                    
                 </div>
 
                 <img src="imagens/imagem-fc.svg" alt="Imagem do fale conosco" class="conteudo_img">
@@ -229,6 +236,7 @@
     </footer>
 
     <script src="main.js" ></script>
+    <script src="paginacao.js" ></script>
     
 </body>
 </html>

@@ -16,7 +16,9 @@ html {
     --cinza: #d8dadd;
     --preto: #000000;
     --azul-claro-neon: #5aebe1;
-    --branco-50: #ffffff50
+    --branco-50: #ffffff50;
+    --verde: #00f821;
+    --vermelho: #ff0000;
 }
 
 
@@ -576,9 +578,66 @@ html {
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-
+    
     color: var(--cinza);
 }
+
+
+/* --------- invisivil e visivil ------------- */
+
+.area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.invi {
+    display: none;
+}
+.visi {
+    display: flex;
+    color: var(--vermelho);
+    font-weight: bold;
+    
+}
+.visi_sucesso {
+    display: flex;
+    color: var(--verde);
+    font-weight: bold;
+}
+
+.botao_ok_erro {
+    display: flex;
+    padding: 8px;
+    color: var(--vermelho);
+    background: none;
+    border-radius: 10px;
+    border:  1px solid var(--vermelho);
+    cursor: pointer;
+}
+.botao_ok_erro:hover {
+    background: var(--vermelho);
+    color: var(--azul-escuro);
+    border: 1px solid var(--azul-escuro);
+    transform: scale(1.1);
+}
+.botao_ok {
+    display: flex;
+    padding: 8px;
+    color: var(--verde);
+    background: none;
+    border-radius: 10px;
+    border:  1px solid var(--verde);
+    cursor: pointer;
+}
+.botao_ok:hover {
+    background: var(--verde);
+    color: var(--azul-escuro);
+    border: 1px solid var(--azul-escuro);
+    transform: scale(1.1);
+}
+
 
 
 
