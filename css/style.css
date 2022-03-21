@@ -717,6 +717,62 @@ html {
     .conteudo_img {
         width: 50%;
     }
+
+
+    .area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .invi {
+        display: none;
+    }
+    .visi {
+        display: flex;
+        color: var(--vermelho);
+        font-weight: bold;
+        
+    }
+    .visi_sucesso {
+        display: flex;
+        color: var(--verde);
+        font-weight: bold;
+    }
+    
+    .botao_ok_erro {
+        display: flex;
+        padding: 8px;
+        color: var(--vermelho);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--vermelho);
+        cursor: pointer;
+    }
+    .botao_ok_erro:hover {
+        background: var(--vermelho);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    .botao_ok {
+        display: flex;
+        padding: 8px;
+        color: var(--verde);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--verde);
+        cursor: pointer;
+    }
+    .botao_ok:hover {
+        background: var(--verde);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    
+    
 }
 
 @media (max-width: 850px) {
@@ -808,6 +864,61 @@ html {
         gap: 10px;
     }
 
+    .area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .invi {
+        display: none;
+    }
+    .visi {
+        display: flex;
+        color: var(--vermelho);
+        font-weight: bold;
+        
+    }
+    .visi_sucesso {
+        display: flex;
+        color: var(--verde);
+        font-weight: bold;
+    }
+    
+    .botao_ok_erro {
+        display: flex;
+        padding: 8px;
+        color: var(--vermelho);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--vermelho);
+        cursor: pointer;
+    }
+    .botao_ok_erro:hover {
+        background: var(--vermelho);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    .botao_ok {
+        display: flex;
+        padding: 8px;
+        color: var(--verde);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--verde);
+        cursor: pointer;
+    }
+    .botao_ok:hover {
+        background: var(--verde);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    
+    
+
 }
 
 @media (max-width: 630px ){
@@ -823,6 +934,60 @@ html {
     .footer {
         padding: 30px 50px 20px 50px;
     }
+    .area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .invi {
+        display: none;
+    }
+    .visi {
+        display: flex;
+        color: var(--vermelho);
+        font-weight: bold;
+        
+    }
+    .visi_sucesso {
+        display: flex;
+        color: var(--verde);
+        font-weight: bold;
+    }
+    
+    .botao_ok_erro {
+        display: flex;
+        padding: 8px;
+        color: var(--vermelho);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--vermelho);
+        cursor: pointer;
+    }
+    .botao_ok_erro:hover {
+        background: var(--vermelho);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    .botao_ok {
+        display: flex;
+        padding: 8px;
+        color: var(--verde);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--verde);
+        cursor: pointer;
+    }
+    .botao_ok:hover {
+        background: var(--verde);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    
+    
 
 }
 
@@ -840,6 +1005,61 @@ html {
         padding: 25px 30px 20px 30px;
     }
 
+    .area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .invi {
+        display: none;
+    }
+    .visi {
+        display: flex;
+        color: var(--vermelho);
+        font-weight: bold;
+        
+    }
+    .visi_sucesso {
+        display: flex;
+        color: var(--verde);
+        font-weight: bold;
+    }
+    
+    .botao_ok_erro {
+        display: flex;
+        padding: 8px;
+        color: var(--vermelho);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--vermelho);
+        cursor: pointer;
+    }
+    .botao_ok_erro:hover {
+        background: var(--vermelho);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    .botao_ok {
+        display: flex;
+        padding: 8px;
+        color: var(--verde);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--verde);
+        cursor: pointer;
+    }
+    .botao_ok:hover {
+        background: var(--verde);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    
+    
+
 }
 
 
@@ -856,5 +1076,60 @@ html {
     .footer {
         padding: 20px 15px 20px 15px;
     }
+
+    .area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .invi {
+        display: none;
+    }
+    .visi {
+        display: flex;
+        color: var(--vermelho);
+        font-weight: bold;
+        
+    }
+    .visi_sucesso {
+        display: flex;
+        color: var(--verde);
+        font-weight: bold;
+    }
+    
+    .botao_ok_erro {
+        display: flex;
+        padding: 8px;
+        color: var(--vermelho);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--vermelho);
+        cursor: pointer;
+    }
+    .botao_ok_erro:hover {
+        background: var(--vermelho);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    .botao_ok {
+        display: flex;
+        padding: 8px;
+        color: var(--verde);
+        background: none;
+        border-radius: 10px;
+        border:  1px solid var(--verde);
+        cursor: pointer;
+    }
+    .botao_ok:hover {
+        background: var(--verde);
+        color: var(--azul-escuro);
+        border: 1px solid var(--azul-escuro);
+        transform: scale(1.1);
+    }
+    
+    
 
 }
