@@ -3,8 +3,10 @@ let alturaQSomos = document.getElementById("qsomos").offsetTop - 100;
 let alturaAP = document.getElementById("ap").offsetTop - 100;
 let alturaFalec = document.getElementById("falec").offsetTop - 100;
 
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function(event){
     
+    event.preventDefault();
+
     if (this.window.scrollY > 100){
         const header = this.document.querySelector(".header");
         header.classList.add("novo_fundo");
