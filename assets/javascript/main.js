@@ -27,7 +27,7 @@ function validacao (event){
         temEspaco = false;
     }
 
-    const caractEsp = '!#$%&*()}{<>:;?/+=,`~^|"¨_°ª§º/¬'
+    const caractEsp = '!#$%&*()}{<>:;?/+=,`~^|"¨_°ª§º/¬-'
     let temCaractEspc = 0;
 
     for (let i = 0; i < email.length; i++){
