@@ -27,6 +27,15 @@ function validacao (event){
         temEspaco = false;
     }
 
+    const caractEsp = '!#$%&*()}{<>:;?/+=,`~^|"¨_°ª§º/¬'
+    let temCaractEspc = 0;
+
+    for (let i = 0; i < email.length; i++){
+        if (caractEsp.includes(email[i])){
+            temCaractEspc += 1;
+        }
+    }
+   
     if (email.includes('@')
         && email.includes('.')
         && email.indexOf('@') < 33
@@ -38,7 +47,8 @@ function validacao (event){
         && email[email.indexOf('@') - 1] !== '.'
         && temArroba === 1
         && email.indexOf('.', email.indexOf('@')) - email.indexOf('@') < 18
-        && !temEspaco) {
+        && !temEspaco
+        && temCaractEspc === 0 ) {
 
         if (msg == false){
             document.getElementById("feedback").classList.add("visi");
