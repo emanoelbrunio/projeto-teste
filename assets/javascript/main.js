@@ -1,7 +1,10 @@
 const botao = document.getElementById("botao");
 const botaoOk = document.getElementById("id_botao_ok");
 
-function validacao (){
+function validacao (event){
+
+    event.preventDefault();
+    
     document.getElementById("feedback").classList.remove("visi_sucesso");
     document.getElementById("id_botao_ok").classList.remove("botao_ok");
 
