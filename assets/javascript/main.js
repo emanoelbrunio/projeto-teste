@@ -4,7 +4,7 @@ const botaoOk = document.getElementById("id_botao_ok");
 function validacao (event){
 
     event.preventDefault();
-    
+
     document.getElementById("feedback").classList.remove("visi_sucesso");
     document.getElementById("id_botao_ok").classList.remove("botao_ok");
 
@@ -17,7 +17,8 @@ function validacao (event){
             temArroba += 1;
         }
     }
-    //usei a intereção com for porque o foreach não foi aceito
+    
+    
     
     let temEspaco;
     if (email.includes(' ')){

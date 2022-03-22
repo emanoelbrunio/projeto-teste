@@ -810,6 +810,7 @@ html {
 
     .botao_fale:hover {
         color: var(--cinza);
+        background: none;
     }
 
     .inicio, .qsomos_conteudo {
