@@ -1,16 +1,22 @@
+// pegando os botoes do html
 const botao = document.getElementById("botao");
 const botaoOk = document.getElementById("id_botao_ok");
 
-function validacao (event){
 
+//funcao para validar 
+function validacao (event){
+    //para evitar que a pag recarregue 
     event.preventDefault();
 
+    //removendo class dos elementos assim que clica no botao
     document.getElementById("feedback").classList.remove("visi_sucesso");
     document.getElementById("id_botao_ok").classList.remove("botao_ok");
 
+    //pegando os valores dos input 
     let email = document.getElementById("email").value;
     let msg = document.getElementById("mensagem").value;
 
+    //verificando se tem mais de um arroba
     let temArroba = 0;
     for (let i = 0; i < email.length; i++) {
         if (email[i] === '@'){
@@ -18,8 +24,7 @@ function validacao (event){
         }
     }
     
-    
-    
+    //verificando se tem espaço    
     let temEspaco;
     if (email.includes(' ')){
         temEspaco = true;
@@ -27,7 +32,8 @@ function validacao (event){
         temEspaco = false;
     }
 
-    const caractEsp = '!#$%&*()}{<>:;?/+=,`~^|"¨_°ª§º/¬-'
+    //verificando se tem algum dos caracteres especiais a baixo
+    const caractEsp = '!#$%&*()}{<>:;?/+=,`~^|"¨_°ª§º/¬-' + "'";
     let temCaractEspc = 0;
 
     for (let i = 0; i < email.length; i++){
@@ -36,6 +42,7 @@ function validacao (event){
         }
     }
    
+    //verificando as condiçoes para ser valido ou nao
     if (email.includes('@')
         && email.includes('.')
         && email.indexOf('@') < 33
@@ -50,6 +57,7 @@ function validacao (event){
         && !temEspaco
         && temCaractEspc === 0 ) {
 
+        //se o email for valido, agora preciso saber se tem mensagem
         if (msg == false){
             document.getElementById("feedback").classList.add("visi");
             const feedback = "Erro no envio: Insira uma mensagem"; 
@@ -60,6 +68,7 @@ function validacao (event){
             return false;
         }
 
+        //retornando as mensagens e add as classes
         const user = email.substr(0, email.indexOf('@'));
         const msgSucesso = `Obrigado pelo contato, ${user}!`; 
                     
@@ -69,7 +78,9 @@ function validacao (event){
         document.getElementById("id_botao_ok").classList.add("botao_ok");
 
         // document.getElementById("mensagem").value = '';
-    } else {  
+    } else { 
+
+        //se o email nao for valido adiciono essas classes 
         document.getElementById("feedback").classList.add("visi");
         const feedback = "Erro no envio: Endereço de email inválido"; 
         document.getElementById("feedback").innerHTML = feedback; 
@@ -78,6 +89,7 @@ function validacao (event){
     }
 }
 
+//funcao para remover o texto ao clicar em ok
 function removeOK(){
     document.getElementById("feedback").classList.remove("visi_sucesso");
     document.getElementById("feedback").classList.remove("visi");
@@ -87,5 +99,6 @@ function removeOK(){
     document.getElementById("mensagem").value = '';
 }
 
+//invocando o onclick dos botoes
 botao.onclick = validacao;
 botaoOk.onclick = removeOK;
